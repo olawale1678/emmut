@@ -1,0 +1,10 @@
+@import 'responsive style';
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    @include minilaptop{
+        background-color: red;
+    }
+}

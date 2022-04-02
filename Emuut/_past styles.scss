@@ -1,0 +1,1909 @@
+@import 'past responsive';
+$background-color: #1960aa;
+body{
+    background-image: linear-gradient(to bottom, rgb(247, 243, 235),white);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.all{
+    @include mobile{
+        overflow: hidden;
+    }
+    @include tablet{
+        background-color: red;
+        overflow: hidden;
+    }
+    @include tablet2{
+        margin-left: 40px;
+        margin-right: 20px;
+        overflow: hidden;
+    }
+    @include tablet3{
+        margin-left: 40px;
+        margin-right: 20px;
+        overflow: hidden;
+    }
+    @include laptop{
+        overflow: hidden;
+    }
+    .heading{
+        @include laptop{
+            display: grid;
+            column-gap: 10px;
+            grid-template-columns: 90px 470px;
+        }
+        .logo{
+            @include mobile{
+                margin: 14px 0px 0px 8px;
+            }
+            @include tablet{
+                margin: 14px 0px 0px 8px;
+            }
+            @include tablet2{
+                margin: 14px 0px 0px 8px;
+            }
+            @include tablet3{
+                margin: 24px 0px 0px 58px;
+            }
+            @include laptop{
+                margin: 14px 0px 0px 8px;
+            }
+        }
+        .list{
+            @include mobile{
+                display: none;
+            }
+            @include tablet{
+                display: none;
+            }
+            @include tablet2{
+                display: none;
+            }
+            @include tablet3{
+                display: none;
+            }
+            @include laptop{
+                margin-top: 20px;
+                display: grid;
+                column-gap: 10px;
+                grid-template-columns: 600px 240px;
+            }
+            ul{
+                @include laptop{
+                    list-style: none;
+                }
+                li{  
+                    @include laptop{
+                        display: inline-block;
+
+                    }
+                    a{
+                        @include laptop{
+                            text-decoration: none;
+                            color: black;
+                            font-weight: lighter;
+                            font-size: 18px;
+                            font-family: sans-serif;
+                        }
+                    }
+                    a:hover{
+                        @include laptop{
+                            color: #5192f3;
+                        }
+                    }
+                    a:nth-child(odd){
+                        @include laptop{
+                            margin-right: 21px;
+                        }
+                    }
+                }
+            }
+            .land{
+                @include laptop{
+                    text-align: center;
+                    margin-top: 1px;
+                    border-radius: 5px;
+                    padding: 15px 18px;
+                    background-color: #447BE0;
+                    position: absolute;
+                    top: 23px;
+                    right: 20px;
+                }
+                .logolink{
+                    @include laptop{
+                        text-decoration: none;
+                        font-size: 22px;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
+            .land:hover{
+                @include laptop{
+                    background-color: #1b4dac;
+                }
+            }
+        }
+    }
+    .writing{
+        @include mobile{
+            text-align: center;
+            margin-top: 110px;
+        }
+        @include tablet{
+            text-align: center;
+            margin-top: 110px;
+        }
+        @include tablet2{
+            text-align: center;
+            margin-top: 110px;
+            display: none;
+        }
+        @include tablet3{
+            text-align: center;
+            margin-top: 110px;
+            margin-bottom: 30px;
+        }
+        @include laptop{
+            margin-top: 70px;
+            margin-bottom: 30px;
+            width: 50%;
+            margin-left: 20px;
+        }
+        .first{
+            color: $background-color;
+            @include mobile{
+            font-size: 38px;
+            font-weight: 600;
+            }
+            @include tablet{
+            font-size: 38px;
+            font-weight: 600;
+            }
+            @include tablet2{
+            font-size: 38px;
+            font-weight: 600;
+            }
+            @include tablet3{
+            font-size: 38px;
+            font-weight: 600;
+            }
+            @include laptop{
+            font-size: 66px;
+            font-weight: 600;
+            margin-right: 120px;
+            margin-bottom: 6px;
+            }
+        }
+        .first-text{
+            @include mobile{
+                line-height: 24px;
+                margin-bottom: 30px;
+            }
+            @include tablet{
+                line-height: 24px;
+                font-size: 15px;
+                margin-bottom: 30px;
+            }
+            @include tablet2{
+                line-height: 24px;
+                font-size: 15px;
+                margin-bottom: 30px;
+            }
+            @include tablet3{
+                line-height: 24px;
+                font-size: 15px;
+                margin-bottom: 30px;
+                margin-left: 160px;
+                margin-right: 170px;
+            }
+            @include laptop{
+                margin-top: 0px;
+                line-height: 24px;
+                font-size: 15px;
+                margin-bottom: 30px;
+                margin-right: 53px;
+            }
+        }
+        .first-link{
+            text-decoration: none;
+            background-color: #498ef5;
+            color: white;
+            @include mobile{
+            border-radius: 3px;
+            padding: 12px 61px;
+            font-size: 22px;
+            font-weight: 600px;
+            font-family: sans-serif;
+            }
+            @include tablet{
+            border-radius: 3px;
+            padding: 12px 61px;
+            font-size: 22px;
+            font-weight: 600px;
+            font-family: sans-serif;
+            }
+            @include tablet2{
+            border-radius: 3px;
+            padding: 12px 61px;
+            font-size: 22px;
+            font-weight: 600px;
+            font-family: sans-serif;
+            }
+            @include tablet3{
+            border-radius: 3px;
+            padding: 12px 61px;
+            font-size: 22px;
+            font-weight: 600px;
+            font-family: sans-serif;
+            }
+            @include laptop{
+            border-radius: 5px;
+            padding: 12px 18px;
+            font-size: 17px;
+            font-weight: bold;
+            font-family: sans-serif;
+            }
+        }
+        .first-link:hover{
+            @include laptop{
+                background-color: #1b6be4;
+            }
+        }
+    }
+    .phone{
+        @include mobile{
+        margin-left: 20px;
+        margin-top: 97px;
+        }
+        @include tablet{
+        margin-left: 20px;
+        margin-top: 97px;
+        }
+        @include tablet2{
+        margin-left: 20px;
+        margin-top: 217px;
+        }
+        @include tablet3{
+        margin-left: 100px;
+        margin-bottom: 20px;
+        }
+        @include laptop{
+            position: absolute;
+            top: 155px;
+            right: 30px;
+        }
+        .phones{
+            @include mobile{
+                width: 87%;
+            }
+            @include tablet{
+                width: 87%;
+            }
+            @include tablet2{
+                width: 87%;
+            }
+            @include tablet3{
+                width: 75%;
+            }
+            @include laptop{
+                height: 410px;
+            }
+        }
+    }
+    .youtube-video{
+        @include laptop{
+            margin-top: 40px;
+            background-image: linear-gradient(to bottom right, rgb(215, 243, 247), white);
+        }
+        .iframe1{
+            @include mobile{
+                width: 100%;
+                height: 315px;
+            }
+            @include tablet{
+                width: 100%;
+                height: 315px;
+            }
+            @include tablet2{
+                width: 100%;
+                height: 315px;
+            }
+            @include tablet3{
+                width: 60%;
+                height: 345px;
+            }
+            @include laptop{
+                margin-top: 20px;
+                width: 40%;
+                height: 335px;
+            }
+        }
+        .iframe2{
+            @include mobile{
+                width: 100%;
+                height: 315px;
+                margin-top: 30px;
+            }
+            @include tablet{
+                width: 100%;
+                height: 315px;
+                margin-top: 30px;
+            }
+            @include tablet2{
+                width: 100%;
+                height: 315px;
+                margin-top: 30px;
+            }
+            @include tablet3{
+                width: 60%;
+                height: 325px;
+                margin-top: 30px;
+            }
+            @include laptop{
+                width: 40%;
+                height: 335px;
+                margin-top: 30px;
+            }
+        }
+    }
+    .second-text{
+        @include mobile{
+            margin-right: 15px;
+            margin-top: 46px;
+        }
+        @include tablet{
+            margin-right: 15px;
+            margin-top: 46px;
+        }
+        @include tablet2{
+            margin-right: 15px;
+            margin-top: 46px;
+        }
+        @include tablet3{
+            font-size: 18px;
+            margin: 46px 190px 0px 10px;
+        }
+        @include laptop{
+            position: absolute;
+            top: 510px;
+            right: 40px;
+            font-size: 17px;
+            margin: 96px 0px 0px 530px;
+            width: 40%;
+            line-height: 25px;
+        }
+        .say{
+            @include mobile{
+                font-weight: 350;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            @include tablet{
+                font-weight: 350;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            @include tablet2{
+                font-weight: 350;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            @include tablet3{
+                font-weight: 350;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            @include laptop{
+                font-weight: 350;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+    }
+    .card-image{
+        @include mobile{
+            margin-left: 103px;
+            margin-top: 40px;
+        }
+        @include tablet{
+            margin-left: 103px;
+            margin-top: 50px;
+        }
+        @include tablet2{
+            margin-left: 103px;
+            margin-top: 60px;
+        }
+        @include tablet3{
+            margin-left: 25%;
+            margin-top: 60px;
+        }
+        @include laptop{
+            position: absolute;
+            top: 899px;
+            right: 35px;
+            width: 40%;
+
+        }
+        .card{
+            @include mobile{
+            }
+        }
+    }
+    .advertisment-image{
+        @include mobile{
+            width: 100%;
+        }
+        @include tablet{
+            width: 100%;
+        }
+        @include tablet2{
+            width: 100%;
+        }
+        @include tablet3{
+            width: 100%;
+        }
+        @include laptop{
+            margin-top: 60px;
+            width: 43%;
+        }
+        .Nancy{
+            @include mobile{
+                width: 100%;
+                margin-top: 105px;
+            }
+            @include tablet{
+                width: 100%;
+                margin-top: 105px;
+            }
+            @include tablet2{
+                width: 100%;
+                margin-top: 105px;
+            }
+            @include tablet3{
+                width: 809px;
+                margin-top: 105px;
+                margin-left: 20px;
+            }
+            @include laptop{
+                width: 100%;
+                margin-top: 175px;
+                margin-left: 20px;
+            }
+        }
+    }
+    .division{
+        @include tablet3{
+            width: 100%;
+            display: grid;
+            row-gap: 70px;
+            column-gap: 110px;
+            grid-template-columns: 250px 250px;
+            margin-left: 80px;
+            margin-top: 80px;
+        }
+        @include laptop{
+            width: 40%;
+            display: grid;
+            row-gap: 20px;
+            column-gap: 20px;
+            grid-template-columns: 250px 250px;
+            position: absolute;
+            top: 1460px;
+            right: 124px;
+        }
+        .graduation{
+            @include mobile{
+            }
+            .colledge{
+                @include mobile{
+                    margin-left: 48%;
+                    margin-top: 46px;
+                }
+                @include tablet{
+                    margin-left: 48%;
+                    margin-top: 46px;
+                }
+                @include tablet2{
+                    margin-left: 48%;
+                    margin-top: 46px;
+                }
+                @include tablet3{
+                    margin-left: 40%;
+                }
+                @include laptop{
+                    margin-left: 40%;
+                }
+            }
+            .graduation-heading{
+                @include mobile{
+                    font-family: sans-serif;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    text-align: center;
+                }
+                @include tablet{
+                    font-family: sans-serif;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    text-align: center;
+                }
+                @include tablet2{
+                    font-family: sans-serif;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    text-align: center;
+                }
+                @include tablet3{
+                    font-family: sans-serif;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    text-align: center;
+                }
+                @include laptop{
+                    font-family: sans-serif;
+                    font-size: 19px;
+                    font-weight: lighter;
+                }
+            }
+            .text{
+                @include mobile{
+                    padding: 0px 56px 0px 50px;
+                    font-size: 19px;
+                    text-align: center;
+                    font-family:  Montserrat;
+                    opacity: .8;
+                }
+                @include tablet{
+                    padding: 0px 56px 0px 50px;
+                    font-size: 19px;
+                    text-align: center;
+                    font-family:  Montserrat;
+                    opacity: .8;
+                }
+                @include tablet2{
+                    padding: 0px 56px 0px 50px;
+                    font-size: 19px;
+                    text-align: center;
+                    font-family:  Montserrat;
+                    opacity: .8;
+                }
+                @include tablet3{
+                    padding: 0px 26px 0px 20px;
+                    font-size: 19px;
+                    text-align: center;
+                    font-family:  Montserrat;
+                    opacity: .8;
+                }
+                @include laptop{
+                    padding: 0px 26px 0px 20px;
+                    font-size: 19px;
+                    font-family:  Montserrat;
+                    opacity: .8;
+                }
+            }
+        }
+        .cashout{
+            @include mobile{
+               
+                
+            }
+            .cash{
+                @include mobile{
+                    margin-left: 48%;
+                    margin-top: 26px;
+                }
+                @include tablet{
+                    margin-left: 48%;
+                    margin-top: 26px;
+                }
+                @include tablet2{
+                    margin-left: 48%;
+                    margin-top: 26px;
+                }
+                @include tablet3{
+                    margin-left: 40%;
+                }
+                @include laptop{
+                    margin-left: 40%;
+                }
+            }
+            .cashout-heading{
+                @include mobile{
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+                @include tablet{
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+                @include tablet2{
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+                @include tablet3{
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+                @include laptop{
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+            }
+            .text{
+                @include mobile{
+                    padding: 0px 56px 0px 50px;
+                    font-size: 19px;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;
+                }
+                @include tablet{
+                    padding: 0px 56px 0px 50px;
+                    font-size: 19px;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;
+                }
+                @include tablet2{
+                    padding: 0px 56px 0px 50px;
+                    font-size: 19px;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;
+                }
+                @include tablet3{
+                    padding: 0px 26px 0px 20px;
+                    font-size: 19px;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;
+                }
+                @include laptop{
+                    padding: 0px 26px 0px 20px;
+                    font-size: 19px;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;
+                }
+            }
+        }
+        .telegram{
+            @include mobile{
+                
+            }
+            .telegram-image{
+                @include mobile{
+                    margin-left: 48%;
+                    margin-top: 26px;
+                }
+                @include tablet{
+                    margin-left: 48%;
+                    margin-top: 26px;
+                }
+                @include tablet2{
+                    margin-left: 48%;
+                    margin-top: 26px;
+                }
+                @include tablet3{
+                    margin-left: 40%;
+                }
+                @include laptop{
+                    margin-left: 40%;
+                }
+            }
+            .telegram-heading{
+                @include mobile{
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+                @include tablet{
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+                @include tablet2{
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+                @include tablet3{
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+                @include laptop{
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+            }
+            .text{
+                @include mobile{
+                    padding: 0px 56px 0px 50px;
+                    font-size: 19px;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;  
+                    margin-bottom: 28px;
+                }
+                @include tablet{
+                    padding: 0px 56px 0px 50px;
+                    font-size: 19px;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;  
+                    margin-bottom: 28px;
+                }
+                @include tablet2{
+                    padding: 0px 56px 0px 50px;
+                    font-size: 19px;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;  
+                    margin-bottom: 28px;
+                }
+                @include tablet3{
+                    padding: 0px 26px 0px 20px;
+                    font-size: 19px;
+                    text-align: center;
+                    font-family:  Montserrat;
+                    opacity: .8;  
+                }
+                @include laptop{
+                    padding: 0px 26px 0px 20px;
+                    font-size: 19px;
+                    font-family:  Montserrat;
+                    opacity: .8;  
+                }
+            }
+            a{
+                @include mobile{
+                    background-color: #447BE0;
+                    color: white;
+                    font-family: Montserrat;
+                    font-weight: lighter;
+                    font-size: 20px;
+                    text-decoration: none;
+                    margin-left: 40%;
+                    padding: 9px 15px 9px 15px;
+                    border-radius: 4px;
+                    transition: $background-color .4s ease-in-out;
+                }
+                @include tablet{
+                    background-color: #447BE0;
+                    color: white;
+                    font-family: Montserrat;
+                    font-weight: lighter;
+                    font-size: 20px;
+                    text-decoration: none;
+                    margin-left: 40%;
+                    padding: 9px 15px 9px 15px;
+                    border-radius: 4px;
+                    transition: $background-color .4s ease-in-out;
+                }
+                @include tablet2{
+                    background-color: #447BE0;
+                    color: white;
+                    font-family: Montserrat;
+                    font-weight: lighter;
+                    font-size: 20px;
+                    text-decoration: none;
+                    margin-left: 40%;
+                    padding: 9px 15px 9px 15px;
+                    border-radius: 4px;
+                    transition: $background-color .4s ease-in-out;
+                }
+                @include tablet3{
+                    background-color: #447BE0;
+                    color: white;
+                    font-family: Montserrat;
+                    font-weight: lighter;
+                    font-size: 20px;
+                    text-decoration: none;
+                    margin-left: 30%;
+                    padding: 9px 15px 9px 15px;
+                    border-radius: 4px;
+                    transition: $background-color .4s ease-in-out;
+                }
+                @include laptop{
+                    background-color: #447BE0;
+                    color: white;
+                    font-family: Montserrat;
+                    font-weight: lighter;
+                    font-size: 20px;
+                    text-decoration: none;
+                    margin-left: 30%;
+                    padding: 9px 15px 9px 15px;
+                    border-radius: 4px;
+                    transition: $background-color .4s ease-in-out;
+                }
+            }
+            a:hover{
+                @include mobile{
+                    background-color: #134ab1;
+                }
+                @include tablet{
+                    background-color: #134ab1;
+                }
+                @include tablet2{
+                    background-color: #134ab1;
+                }
+                @include tablet3{
+                    background-color: #134ab1;
+                }
+                @include laptop{
+                    background-color: #134ab1;
+                }
+            }
+        }
+        .whatsapp{
+            @include mobile{
+                margin-top: 24px;
+            }
+            @include tablet{
+                margin-top: 24px;
+            }
+            @include tablet2{
+                margin-top: 24px;
+            }
+            @include tablet3{
+            }
+            .whatsapp-image{
+                @include mobile{
+                    margin-left: 48%;
+                    margin-top: 26px;
+                }
+                @include tablet{
+                    margin-left: 48%;
+                    margin-top: 26px;
+                }
+                @include tablet2{
+                    margin-left: 48%;
+                    margin-top: 26px;
+                }
+                @include tablet3{
+                    margin-left: 40%;
+                }
+                @include laptop{
+                    margin-left: 40%;
+                }
+            }
+            .whatsapp-heading{
+                @include mobile{
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+                @include tablet{
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+                @include tablet2{
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+                @include tablet3{
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+                @include laptop{
+                    font-size: 19px;
+                    font-weight: lighter;
+                    font-family: sans-serif;
+                }
+            }
+            .text{
+                @include mobile{
+                    padding: 0px 56px 0px 50px;
+                    font-size: 19px;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;  
+                    margin-bottom: 28px;
+                }
+                @include tablet{
+                    padding: 0px 56px 0px 50px;
+                    font-size: 19px;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;  
+                    margin-bottom: 28px;
+                }
+                @include tablet2{
+                    padding: 0px 56px 0px 50px;
+                    font-size: 19px;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;  
+                    margin-bottom: 28px;
+                }
+                @include tablet3{
+                    padding: 0px 26px 0px 20px;
+                    font-size: 19px;
+                    text-align: center;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;  
+                    margin-bottom: 28px;
+                }
+                @include laptop{
+                    padding: 0px 26px 0px 20px;
+                    font-size: 19px;
+                    margin-top: 5px;
+                    font-family:  Montserrat;
+                    opacity: .8;  
+                    margin-bottom: 28px;
+                }
+            }
+            a{
+                @include mobile{
+                    background-color: #447BE0;
+                    color: white;
+                    font-family: Montserrat;
+                    font-weight: lighter;
+                    font-size: 20px;
+                    text-decoration: none;
+                    margin-left: 38%;
+                    padding: 9px 15px 9px 15px;
+                    border-radius: 4px;
+                    transition: $background-color .4s ease-in-out;
+                }
+                @include tablet{
+                    background-color: #447BE0;
+                    color: white;
+                    font-family: Montserrat;
+                    font-weight: lighter;
+                    font-size: 20px;
+                    text-decoration: none;
+                    margin-left: 38%;
+                    padding: 9px 15px 9px 15px;
+                    border-radius: 4px;
+                    transition: $background-color .4s ease-in-out;
+                }
+                @include tablet2{
+                    background-color: #447BE0;
+                    color: white;
+                    font-family: Montserrat;
+                    font-weight: lighter;
+                    font-size: 20px;
+                    text-decoration: none;
+                    margin-left: 38%;
+                    padding: 9px 15px 9px 15px;
+                    border-radius: 4px;
+                    transition: $background-color .4s ease-in-out;
+                }
+                @include tablet3{
+                    background-color: #447BE0;
+                    color: white;
+                    font-family: Montserrat;
+                    font-weight: lighter;
+                    font-size: 20px;
+                    text-decoration: none;
+                    margin-left: 28%;
+                    padding: 9px 15px 9px 15px;
+                    border-radius: 4px;
+                    transition: $background-color .4s ease-in-out;
+                }
+                @include laptop{
+                    background-color: #447BE0;
+                    color: white;
+                    font-family: Montserrat;
+                    font-weight: lighter;
+                    font-size: 20px;
+                    text-decoration: none;
+                    margin-left: 28%;
+                    padding: 9px 15px 9px 15px;
+                    border-radius: 4px;
+                    transition: $background-color .4s ease-in-out;
+                }
+            }
+            a:hover{
+                @include mobile{
+                    background-color: #134ab1;  
+                }
+                @include tablet{
+                    background-color: #134ab1;  
+                }
+                @include tablet2{
+                    background-color: #134ab1;  
+                }
+                @include tablet3{
+                    background-color: #134ab1;  
+                }
+                @include laptop{
+                    background-color: #134ab1;  
+                }
+            }
+        }
+    }
+    .bootstrap{
+        @include mobile{
+            margin-top: 110px;
+        }
+        @include tablet{
+            margin-top: 110px;
+        }
+        @include tablet2{
+            margin-top: 110px;
+        }
+        @include tablet3{
+            margin-top: 110px;
+        }
+        @include laptop{
+            display: none;
+            margin-top: 110px;
+        }
+        .first-text{
+            @include mobile{
+                font-size: 24px;
+                font-family: Montserrat;
+                font-weight: lighter;
+                margin-left: 24%;
+                text-decoration: none;
+                color: black;
+
+            }
+            @include tablet{
+                font-size: 24px;
+                font-family: Montserrat;
+                font-weight: lighter;
+                margin-left: 24%;
+                text-decoration: none;
+                color: black;
+
+            }
+            @include tablet2{
+                font-size: 24px;
+                font-family: Montserrat;
+                font-weight: lighter;
+                margin-left: 24%;
+                text-decoration: none;
+                color: black;
+
+            }
+            @include tablet3{
+                font-size: 24px;
+                font-family: Montserrat;
+                font-weight: lighter;
+                margin-left: 24%;
+                text-decoration: none;
+                color: black;
+
+            }
+            @include laptop{
+                font-size: 29px;
+                font-family: Montserrat;
+                font-weight: lighter;
+                position: absolute;
+                top: 2060px;
+                left: 26%;
+                text-decoration: none;
+                color: black;
+
+            }
+        }
+    }
+}
+.semi-ending-tag{
+    @include mobile{
+        margin-top: 90px;
+        background-color: #1572C7;
+        padding: 36px 50px;
+    }
+    @include tablet{
+        margin-top: 90px;
+        background-color: #1572C7;
+        padding: 36px 50px;
+    }
+    @include tablet2{
+        margin-top: 90px;
+        background-color: #1572C7;
+        padding: 36px 50px;
+    }
+    @include tablet3{
+        margin-top: 90px;
+        background-color: #1572C7;
+        padding: 36px 50px;
+    }
+    @include laptop{
+        display: none;
+    }
+    .text{
+        @include mobile{
+            font-size: 28px;
+            font-weight: lighter;
+            font-family: montserrat;
+            text-align: center;
+            margin-bottom: 37px;
+            color: white;
+        }
+        @include tablet{
+            font-size: 28px;
+            font-weight: lighter;
+            font-family: montserrat;
+            text-align: center;
+            margin-bottom: 37px;
+            color: white;
+        }
+        @include tablet2{
+            font-size: 28px;
+            font-weight: lighter;
+            font-family: montserrat;
+            text-align: center;
+            margin-bottom: 37px;
+            color: white;
+        }
+        @include tablet3{
+            font-size: 28px;
+            font-weight: lighter;
+            font-family: montserrat;
+            text-align: center;
+            margin-bottom: 37px;
+            color: white;
+        }
+    }
+    .link{
+        @include mobile{
+            margin-left: 40%;
+            text-decoration: none;
+            color: white;
+            background-color: #EB5757;
+            border-radius: 8px;
+            transition: color .4s ease-in-out;
+            padding: 8px 18px;
+        }
+        @include tablet{
+            margin-left: 40%;
+            text-decoration: none;
+            color: white;
+            background-color: #EB5757;
+            border-radius: 8px;
+            padding: 8px 14px;
+        }
+        @include tablet2{
+            margin-left: 40%;
+            text-decoration: none;
+            color: white;
+            background-color: #EB5757;
+            border-radius: 8px;
+            padding: 8px 14px;
+        }
+        @include tablet3{
+            margin-left: 40%;
+            text-decoration: none;
+            color: white;
+            background-color: #EB5757;
+            border-radius: 8px;
+            padding: 8px 14px;
+        }
+    }
+    .link:hover{
+        @include mobile{
+            color: black;
+        }
+        @include tablet{
+            color: black;
+        }
+        @include tablet2{
+            color: black;
+        }
+        @include tablet3{
+            color: black;
+        }
+    }
+}
+.responsibility{
+    @include tablet2{
+        display: grid;
+        row-gap: 0px;
+        column-gap: 40px;
+        grid-template-columns: 250px 250px;
+        margin-left: 16%;
+    }
+    @include tablet3{
+        display: grid;
+        column-gap: 10px;
+        grid-template-columns: 120px 170px 170px 170px;
+        margin-left: 8%;
+    }
+    @include laptop{
+        display: grid;
+        column-gap: 60px;
+        grid-template-columns: 170px 170px 170px 170px;
+        color: white;
+        background-color: #255FAD;
+        margin-top: 350px;
+        padding-left: 70px;
+        overflow: hidden;
+    }
+    .ending-link{
+        @include mobile{
+            margin-bottom: 0px;
+        }
+        @include tablet{
+            margin-bottom: 0px;
+            margin-top: 110px;
+        }
+        @include tablet2{
+            margin-bottom: 0px;
+        }
+        @include tablet3{
+            margin-bottom: 0px;
+        }
+        @include laptop{
+            margin-bottom: 0px;
+        }
+        .heading{
+            @include mobile{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include tablet{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include tablet2{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include tablet3{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include laptop{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+        }
+        .link1{
+            @include mobile{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include tablet{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include tablet2{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include tablet3{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include laptop{
+                text-decoration: none;
+                display: block;
+                color: white;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+        }
+        .link2{
+            @include mobile{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include tablet{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include tablet2{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include tablet3{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include laptop{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+        }
+    }
+    .second-ending-link{
+        @include mobile{
+            margin-top: 0px;
+        }
+        @include tablet{
+            margin-top: 0px;
+        }
+        @include tablet2{
+            margin-top: 0px;
+        }
+        @include tablet3{
+            margin-top: 0px;
+        }
+        @include laptop{
+            margin-top: 0px;
+        }
+        .heading{
+            @include mobile{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include tablet{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include tablet2{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include tablet3{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include laptop{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+        }
+        .link1{
+            @include mobile{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include tablet{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include tablet2{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include tablet3{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include laptop{
+                text-decoration: none;
+                display: block;
+                color: white;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+        }
+        .link2{
+            @include mobile{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include tablet{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include tablet2{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include tablet3{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include laptop{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+        }
+    }
+    .third-ending-link{
+        @include mobile{
+            margin-top: 0px;
+        }
+        @include tablet{
+            margin-top: 0px;
+        }
+        @include tablet2{
+            margin-top: 0px;
+        }
+        @include tablet3{
+            margin-top: 0px;
+        }
+        @include laptop{
+            margin-top: 0px;
+        }
+        .heading{
+            @include mobile{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include tablet{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include tablet2{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include tablet3{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include laptop{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+        }
+        .link1{
+            @include mobile{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include tablet{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include tablet2{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include tablet3{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include laptop{
+                text-decoration: none;
+                display: block;
+                color: white;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+        }
+        .link2{
+            @include mobile{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include tablet{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include tablet2{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include tablet3{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include laptop{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+        }
+    }
+    .forth-ending-link{
+        @include mobile{
+            margin-top: 0px;
+        }
+        @include tablet{
+            margin-top: 0px;
+        }
+        @include tablet2{
+            margin-top: 0px;
+        }
+        @include tablet3{
+            margin-top: 0px;
+        }
+        @include laptop{
+            margin-top: 0px;
+        }
+        .heading{
+            @include mobile{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include tablet{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include tablet2{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include tablet3{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+            @include laptop{
+                font-size: 22px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 15px;
+            }
+        }
+        .link1{
+            @include mobile{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include tablet{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include tablet2{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include tablet3{
+                text-decoration: none;
+                display: block;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+            @include laptop{
+                text-decoration: none;
+                display: block;
+                color: white;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+                margin-bottom: 10px;
+            }
+        }
+        .link2{
+            @include mobile{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include tablet{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include tablet2{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include tablet3{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+            @include laptop{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family: montserrat;
+            }
+        }
+    }
+    .svg{
+        @include mobile{
+            margin-top: 20px;
+        }
+        @include tablet{
+            margin-top: 20px;
+        }
+        @include tablet2{
+            margin-top: 20px;
+        }
+        @include tablet3{
+            margin-top: 20px;
+        }
+        @include laptop{
+            display: none;
+            margin-top: 20px;
+        }
+        svg{
+            @include mobile{
+                width: 40px;
+                color: $background-color;
+            }
+            @include tablet{
+                width: 40px;
+                color: $background-color;
+            }
+            @include tablet2{
+                width: 40px;
+                color: $background-color;
+            }
+            @include tablet3{
+                width: 40px;
+                color: $background-color;
+            }
+            @include laptop{
+                width: 40px;
+                color: white;
+            }
+            path{
+                @include mobile{
+                    width: 40px;
+                }
+                @include tablet{
+                    width: 40px;
+                }
+                @include tablet2{
+                    width: 40px;
+                }
+                @include tablet3{
+                    width: 40px;
+                }
+                @include laptop{
+                    width: 40px;
+                }
+            }
+        }
+    }
+    .ola-ending-tag{
+        @include mobile{
+            display: none;
+        }
+        @include tablet{
+            display: none;
+        }
+
+        @include tablet2{
+            display: none;
+        }
+        @include tablet3{
+            display: none;
+        }        @include laptop{
+            color: white;
+            width: 700px;
+            margin-top: 50px;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+}
+.main-ending-tag{
+    @include mobile{
+        margin-top: 17px;
+        margin-bottom: 10px;
+    }
+    @include tablet{
+        margin-top: 17px;
+        margin-bottom: 10px;
+    }
+    @include tablet2{
+        margin-top: 17px;
+        margin-bottom: 10px;
+    }
+    @include tablet3{
+        margin-top: 17px;
+        margin-bottom: 10px;
+    }
+    @include laptop{
+        display: none;
+        margin-top: 17px;
+        margin-bottom: 10px;
+    }
+    .text{
+        @include mobile{
+            color: red;
+            text-align: center;
+            font-size: 22px;
+            font-weight: lighter;
+            font-family: montserrat;
+        }
+        @include tablet{
+            color: red;
+            text-align: center;
+            font-size: 22px;
+            font-weight: lighter;
+            font-family: montserrat;
+        }
+        @include tablet2{
+            color: red;
+            text-align: center;
+            font-size: 22px;
+            font-weight: lighter;
+            font-family: montserrat;
+        }
+        @include tablet3{
+            color: red;
+            text-align: center;
+            font-size: 22px;
+            font-weight: lighter;
+            font-family: montserrat;
+        }
+    }
+}
